@@ -1,5 +1,16 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<h1>extended!!!</h1>
+<h1>合気道部</h1>
+<p>メニューを選んでください</p>
+
+  <p>
+    <a href="{{ url_for('record') }}">記録する</a>
+  </p>
+  <p>
+    <a href="{{ url_for('records') }}">記録をみる</a>
+  </p>
+  <p>
+    <a href="{{ url_for('analytics') }}">集計・グラフ</a>
+  </p>
 {% endblock %}

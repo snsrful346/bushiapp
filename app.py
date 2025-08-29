@@ -16,9 +16,17 @@ class Post(db.Model):
 def index():
     return render_template('index.html')
 
-@app.route('/create')
-def create():
-    return render_template('create.html')
+@app.route('/record')
+def record():
+    return render_template('record.html')
+
+@app.route('/records')
+def records():
+    return render_template('records.html')
+
+@app.route('/analytics')
+def analytics():
+    return render_template('analytics.html')
 
 if __name__ == '__main__':
     app.run()
