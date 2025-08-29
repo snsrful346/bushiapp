@@ -2,8 +2,10 @@
 
 {% block body %}
 <div class="record">
-    <form action="/" method="POST">
-        
+    <form action="/records" method="POST">
+        タイトル <input type="date" name="date">
+        <input type="text" neme="title">
+        <input type="submit" value="登録">
     </form>
 </div>
 {% endblock %}
