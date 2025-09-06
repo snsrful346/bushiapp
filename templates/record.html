@@ -3,8 +3,18 @@
 {% block body %}
 <div class="record">
     <form action="/records" method="POST">
-        タイトル <input type="date" name="date">
-        <input type="text" neme="title">
+        稽古 <input type="date" name="date">
+        <input type="text" name="title">
+        <input type="checkbox"　name="member1" value="千葉" checked> 千葉
+        <select id="training menu1" name="稽古内容1">
+            <option value=""disabled selected>選んでください</option>
+            <option value="syoumen" >正面打</option>
+        </select>
+        <select id="training menu2" name="稽古内容2">
+            <option value=""disabled selected>選んでください</option>
+            <option value="ikkyou" >一教</option>
+            <option value="nikkyou" >二教</option>
+        </select>
         <input type="submit" value="登録">
     </form>
 </div>
